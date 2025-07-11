@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Health Protocol Is Being Prepared...</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Arial', sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            color: white;
+        }
+        
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 40px 20px;
+            text-align: center;
+        }
+        
+        .success-icon {
+            font-size: 80px;
+            margin-bottom: 20px;
+            animation: pulse 2s infinite;
+        }
+        
+        @keyframes pulse {
+            0%, 100% { transform: scale(1); }
+            50% { transform: scale(1.1); }
+        }
+        
+        .headline {
+            font-size: 3.2em;
+            font-weight: bold;
+            margin-bottom: 30px;
+            line-height: 1.2;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+        }
+        
+        .subheadline {
+            font-size: 1.4em;
+            margin-bottom: 40px;
+            opacity: 0.9;
+            line-height: 1.4;
+        }
+        
+        .main-content {
+            background: rgba(255,255,255,0.1);
+            backdrop-filter: blur(10px);
+            border-radius: 20px;
+            padding: 40px;
+            margin: 40px 0;
+            border: 1px solid rgba(255,255,255,0.2);
+        }
+        
+        .countdown-section {
+            background: rgba(255,255,255,0.15);
+            border-radius: 15px;
+            padding: 30px;
+            margin: 30px 0;
+            border: 2px solid rgba(255,255,255,0.3);
+        }
+        
+        .countdown-text {
+            font-size: 1.3em;
+            margin-bottom: 20px;
+            font-weight: bold;
+        }
+        
+        .countdown-timer {
+            font-size: 3em;
+            font-weight: bold;
+            color: #FFE135;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+            margin: 20px 0;
+            font-family: 'Courier New', monospace;
+        }
+        
+        .social-proof {
+            background: rgba(255,255,255,0.1);
+            border-radius: 15px;
+            padding: 30px;
+            margin: 40px 0;
+            text-align: left;
+        }
+        
+        .social-proof h3 {
+            text-align: center;
+            font-size: 1.8em;
+            margin-bottom: 30px;
+            color: #FFE135;
+        }
+        
+        .testimonial {
+            background: rgba(255,255,255,0.1);
+            border-radius: 10px;
+            padding: 20px;
+            margin: 20px 0;
+            border-left: 4px solid #FFE135;
+        }
+        
+        .testimonial-text {
+            font-style: italic;
+            margin-bottom: 10px;
+            line-height: 1.5;
+        }
+        
+        .testimonial-author {
+            font-weight: bold;
+            color: #FFE135;
+        }
+        
+        .next-steps {
+            background: linear-gradient(45deg, #FF6B6B, #4ECDC4);
+            border-radius: 15px;
+            padding: 30px;
+            margin: 40px 0;
+        }
+        
+        .next-steps h3 {
+            font-size: 1.8em;
+            margin-bottom: 20px;
+        }
+        
+        .step {
+            background: rgba(255,255,255,0.2);
+            border-radius: 10px;
+            padding: 15px;
+            margin: 15px 0;
+            display: flex;
+            align-items: center;
+        }
+        
+        .step-number {
+            background: #FFE135;
+            color: #333;
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: bold;
+            margin-right: 20px;
+            flex-shrink: 0;
+        }
+        
+        .urgency-box {
+            background: linear-gradient(45deg, #FF416C, #FF4B2B);
+            border-radius: 15px;
+            padding: 25px;
+            margin: 30px 0;
+            border: 2px solid rgba(255,255,255,0.3);
+            box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+        }
+        
+        .protocol-hint {
+            background: rgba(255,230,53,0.2);
+            border: 2px dashed #FFE135;
+            border-radius: 15px;
+            padding: 25px;
+            margin: 30px 0;
+        }
+        
+        .protocol-hint h4 {
+            color: #FFE135;
+            font-size: 1.5em;
+            margin-bottom: 15px;
+        }
+        
+        @media (max-width: 768px) {
+            .headline {
+                font-size: 2.2em;
+            }
+            
+            .countdown-timer {
+                font-size: 2em;
+            }
+            
+            .container {
+                padding: 20px 15px;
+            }
+            
+            .main-content {
+                padding: 25px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="success-icon">🎯</div>
+        
+        <h1 class="headline">PERFECT! Your Personal Health Protocol Is Being Prepared...</h1>
+        
+        <p class="subheadline">I'm personally reviewing your responses right now and selecting the exact strategies that will work for YOUR situation.</p>
+        
+        <div class="main-content">
+            <p style="font-size: 1.2em; line-height: 1.6; margin-bottom: 25px;">
+                Based on what you told me about your health challenge, I'm preparing your personalized health blueprint - the same approach that's helped <strong>500+ people break free from their health prison.</strong>
+            </p>
+            
+            <p style="font-size: 1.1em; line-height: 1.6; margin-bottom: 25px;">
+                But here's what most people don't realize...
+            </p>
+            
+            <p style="font-size: 1.1em; line-height: 1.6;">
+                The free guide I'm sending you contains the <strong>FOUNDATION</strong>. But the real breakthrough happens when you get the complete protocol - the one that solved this in just <strong>21 days</strong>.
+            </p>
+        </div>
+        
+        <div class="countdown-section">
+            <div class="countdown-text">Your personalized report arrives in:</div>
+            <div class="countdown-timer" id="countdown">10:00</div>
+            <p style="font-size: 1.1em;">Check your email inbox and spam folder!</p>
+        </div>
+        
+        <div class="protocol-hint">
+            <h4>🔥 EXCLUSIVE INSIDER ACCESS</h4>
+            <p style="font-size: 1.1em; line-height: 1.5;">
+                Inside your free guide, you'll discover how to get exclusive access to my personal <strong>$47 protocol</strong> that solved this exact problem in 21 days. This isn't available anywhere else.
+            </p>
+        </div>
+        
+        <div class="social-proof">
+            <h3>While You Wait... Here's What Happened for Others:</h3>
+            
+            <div class="testimonial">
+                <div class="testimonial-text">"I tried everything for my gut issues. Doctors, diets, supplements - nothing worked. This protocol changed my life in 3 weeks. I finally have my energy back!"</div>
+                <div class="testimonial-author">- Sarah M. (Gut Issues)</div>
+            </div>
+            
+            <div class="testimonial">
+                <div class="testimonial-text">"My back pain was ruining my sleep for 8 years. I was skeptical, but desperate. Now I wake up pain-free every morning. This is real."</div>
+                <div class="testimonial-author">- Mike D. (Chronic Back Pain)</div>
+            </div>
+            
+            <div class="testimonial">
+                <div class="testimonial-text">"Migraines controlled my life. I missed work, family events, everything. Not anymore. I haven't had a migraine in 2 months."</div>
+                <div class="testimonial-author">- Lisa K. (Severe Migraines)</div>
+            </div>
+        </div>
+        
+        <div class="next-steps">
+            <h3>What Happens Next:</h3>
+            
+            <div class="step">
+                <div class="step-number">1</div>
+                <div>Check your email in the next 10 minutes for your personalized health guide</div>
+            </div>
+            
+            <div class="step">
+                <div class="step-number">2</div>
+                <div>Read the guide immediately - it contains the foundation you need</div>
+            </div>
+            
+            <div class="step">
+                <div class="step-number">3</div>
+                <div>Look for the exclusive offer inside - this is your chance to get the complete protocol</div>
+            </div>
+        </div>
+        
+        <div class="urgency-box">
+            <h3 style="margin-bottom: 15px;">⚡ IMPORTANT:</h3>
+            <p style="font-size: 1.1em; line-height: 1.5;">
+                The complete protocol I'm offering has limited availability. I can only work with a few people at a time to ensure results. Don't wait - your health transformation starts today.
+            </p>
+        </div>
+        
+        <p style="font-size: 1.3em; margin-top: 40px; font-weight: bold;">
+            Keep an eye on your inbox. What I'm about to share will change everything.
+        </p>
+    </div>
+    
+    <script>
+        // Countdown timer
+        let timeLeft = 600; // 10 minutes in seconds
+        
+        function updateCountdown() {
+            const minutes = Math.floor(timeLeft / 60);
+            const seconds = timeLeft % 60;
+            
+            document.getElementById('countdown').textContent = 
+                `${minutes.toString().padStart(2, '0')}:${seconds.toString().padStart(2, '0')}`;
+            
+            if (timeLeft > 0) {
+                timeLeft--;
+            } else {
+                document.getElementById('countdown').textContent = "CHECK YOUR EMAIL NOW!";
+                document.getElementById('countdown').style.color = "#FF416C";
+                document.getElementById('countdown').style.animation = "pulse 1s infinite";
+            }
+        }
+        
+        // Update countdown every second
+        setInterval(updateCountdown, 1000);
+        updateCountdown(); // Initial call
+    </script>
+</body>
+</html>
